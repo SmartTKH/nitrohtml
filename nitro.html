@@ -166,7 +166,25 @@ body{font-family: Inter;}blockquote{border-color: #005af0;}div[submit-success] >
 
 <section class="mbr-section tab1 tab cid-t0vM2vRKAg" id="tab1-5">
 
+    <style>
+    .containervideo {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    }
     
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    </style>
 
     <div class="container">
         <div class="mbr-row mbr-jc-c">
@@ -197,7 +215,10 @@ body{font-family: Inter;}blockquote{border-color: #005af0;}div[submit-success] >
                     <div role="tabpanel" class="tab-content mbr-p-4 text-black">
                         <h2 class="mbr-section-title mbr-fonts-style align-center mbr-semibold display-5">Tutorial</h2>
                         
-                        <p class="mbr-text mbr-fonts-style align-center display-4 mbr-pt-2"><iframe width="560" height="315" src="assets/images/2022-04-01 12-39-48_Trim.mp4" frameborder="0" allowfullscreen></iframe></p>
+                        <p class="mbr-text mbr-fonts-style align-center display-4 mbr-pt-2">
+                          <div class="containervideo"> 
+                            <iframe class="responsive-iframe" src="assets/images/2022-04-01 12-39-48_Trim.mp4"></iframe>
+                          </div></p>
                     </div>
                     
                     
